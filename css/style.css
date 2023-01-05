@@ -155,6 +155,7 @@ button {
   flex-direction: column;
   justify-content: center;
   gap: 23px;
+  z-index: 1099;
 }
 .home-section .social a img {
   transition: all 0.5s ease;
@@ -289,7 +290,7 @@ button {
   line-height: 29px;
   color: #fd6e0a;
 }
-.service-section .service-title-container h2 {
+.service-section .service-title-container h1 {
   margin: 10px 0 20px;
   font-weight: 700;
   font-size: 30px;
@@ -399,4 +400,115 @@ button {
   font-size: 16px;
   line-height: 21px;
   color: #6f6b80;
+}
+
+/* experience design */
+.experience-section {
+  padding: 70px 0 90px;
+  background-color: #f1f4fb;
+  position: relative;
+}
+.experience-section .experience-bg-element {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 100vw;
+  z-index: -1;
+}
+.experience-section .experience-bg-element img {
+  width: 100%;
+}
+.experience-section p {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 29px;
+  text-align: center;
+  color: #fd6e0a;
+}
+.experience-section h1 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 39px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #15295f;
+}
+.experience-section .experience-items {
+  margin-top: 30px;
+  justify-content: space-between;
+  gap: 20px;
+}
+.experience-items .experience-item {
+  flex: 0 0 48%;
+  max-width: 48%;
+}
+.experience-items .experience-item .experience-info {
+  display: flex;
+  justify-content: space-between;
+}
+.experience-item .experience-info p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+  opacity: 0;
+  animation: showText 0.5s 1s linear forwards;
+}
+
+@keyframes showText {
+  100% {
+    opacity: 1;
+  }
+}
+
+.experience-item .progress-line {
+  margin-top: 7px;
+  height: 10px;
+  width: 100%;
+  background-color: #cdcdcd;
+  position: relative;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.experience-item .progress-line span {
+  height: 100%;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: left;
+  background-color: #fd6e0a;
+  animation: animate 1s 1.5s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+.experience-item .progress-line.fb-marketing span {
+  width: 90%;
+}
+.experience-item .progress-line.affiliate-marketing span {
+  width: 50%;
+}
+.experience-item .progress-line.seo span {
+  width: 80%;
+}
+.experience-item .progress-line.graphic-design span {
+  width: 90%;
+}
+.experience-item .progress-line.content-writing span {
+  width: 95%;
+}
+.experience-item .progress-line.web-ui-design span {
+  width: 49%;
+}
+.experience-item .progress-line.youtube-marketing span {
+  width: 72%;
+}
+.experience-item .progress-line.web-design span {
+  width: 70%;
 }
