@@ -140,12 +140,11 @@ button {
 
 /* home section design */
 .home-section {
-  min-height: 100vh;
   background-color: #fdf8f7;
-  background-image: url('../images/backgraound_elements.png');
+  background-image: url("../images/backgraound_elements.png");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: center;
   position: relative;
 }
 .home-section .social {
@@ -194,23 +193,22 @@ button {
   line-height: 21px;
   margin: 40px 0 50px;
 }
-.home-section .hero-btn-container {
+.home-section .home-btn-container {
   display: flex;
-  gap: 45px;
+  gap: 25px;
   align-items: center;
 }
-.hero-btn-container .btn-02 {
+.home-section .home-btn-container .btn-02 {
   padding: 10px 20px;
   font-weight: 500;
   font-size: 18px;
   line-height: 23px;
   border: 2px solid transparent;
   background-color: transparent;
-
   color: #fd6e0a;
   transition: all 0.5s ease;
 }
-.hero-btn-container .btn-02:hover {
+.home-section .home-btn-container .btn-02:hover {
   border: 2px solid #fd6e0a;
   background-color: #fd6e0a;
   color: #ffffff;
@@ -232,16 +230,22 @@ button {
   max-width: 90%;
   margin: -70px auto 0;
   background: #ffffff;
-  padding: 30px 55px;
+  padding: 15px 0;
   border-radius: 500px;
   box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
 }
 .support-items .support-item {
+  padding: 15px 0;
   flex: 0 0 33.33%;
   max-width: 33.33%;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 20px;
+  border-right: 1px solid #f2f2f2;
+}
+.support-items .support-item:last-child {
+  border-right: 1px solid transparent;
 }
 .support-items .support-item span {
   width: 80px;
@@ -264,4 +268,135 @@ button {
   font-size: 20px;
   line-height: 18px;
   color: #fd6e0a;
+}
+
+/* service design */
+
+.service-section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+.service-section .row {
+  flex-wrap: nowrap;
+}
+.service-section .service-title-container {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+.service-section .service-title-container p {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 29px;
+  color: #fd6e0a;
+}
+.service-section .service-title-container h2 {
+  margin: 10px 0 20px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 39px;
+  text-transform: capitalize;
+  color: #000000;
+}
+.service-title-container .service-btn-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.service-btn-container .service-btn-left {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #ececec;
+  border-radius: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.service-btn-container .service-btn-right {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #fd6e0a;
+  border-radius: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-section .service-items {
+  position: relative;
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+.service-section .service-items .service-element {
+  position: absolute;
+  left: -100px;
+  bottom: -100px;
+  z-index: -1;
+}
+.service-section .service-item {
+  padding: 40px 30px;
+  background-color: #ffffff;
+  box-shadow: 0px 8px 16px rgba(106, 105, 105, 0.06);
+}
+.service-items .service-item .service-item-logo-cont-1 {
+  display: block;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  background-color: #9c19c9;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.service-items .service-item .service-item-logo-cont-2 {
+  display: block;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  background-color: #ffaf00;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.service-items .service-item .service-item-logo-cont-3 {
+  display: block;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  background-color: #ff4e6e;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.service-items .service-item .service-item-logo-cont-4 {
+  display: block;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  background-color: #4ac3ca;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.service-items .service-item h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  color: #15295f;
+  margin: 20px 0 15px;
+}
+.service-items .service-item p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #6f6b80;
 }
