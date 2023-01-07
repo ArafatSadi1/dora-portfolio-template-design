@@ -519,7 +519,7 @@ button {
 
 /* works section design */
 .works-section {
-  padding: 70px 0 100px;
+  padding-top: 70px;
 }
 .works-section p {
   font-weight: 500;
@@ -609,4 +609,139 @@ button {
   text-align: center;
   line-height: 26px;
   cursor: zoom-out;
+}
+
+/* feedback section design */
+.feedback-section {
+  padding-top: 110px;
+}
+.feedback-section .feedback-section-title-cont {
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 70px;
+}
+.feedback-section h1 {
+  max-width: 450px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 39px;
+  text-transform: capitalize;
+  color: #15295f;
+}
+.feedback-section .feedback-btn-cont {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.feedback-btn-cont .feedback-btn {
+  width: 70px;
+  height: 70px;
+  background-color: #ececec;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.feedback-btn-cont .feedback-btn.active {
+  background-color: #fd6e0a;
+}
+.feedback-btn-cont .feedback-btn img {
+  width: 35px;
+}
+.feedback-section .feedback-items {
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+.feedback-section .feedback-item {
+  flex: 0 0 34%;
+  max-width: 34%;
+  display: flex;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+}
+.feedback-section .feedback-item.active {
+  flex: 0 0 64%;
+  max-width: 64%;
+}
+.feedback-section .feedback-item.active .feedback-active-img {
+  display: block;
+}
+.feedback-section .feedback-item .feedback-active-img {
+  display: none;
+}
+.feedback-item .feedback-info-cont {
+  padding: 30px;
+  position: relative;
+}
+.feedback-item .feedback-title-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.feedback-item .feedback-title-cont .feedback-title-element {
+  width: 30px;
+  height: 50px;
+}
+.feedback-item .feedback-title-cont .feedback-title-element img {
+  width: 100%;
+  height: 100%;
+}
+.feedback-item .feedback-title-cont h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  color: #000000;
+}
+.feedback-item .feedback-info-cont .feedback-txt {
+  padding: 15px 0 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #6f6b80;
+}
+.feedback-info-cont .feedback-person-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.feedback-person-info .feedback-person-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.feedback-person-info .feedback-person-img img {
+  width: 100%;
+  height: 100%;
+}
+.feedback-person-info .feedback-person-info h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #000000;
+}
+.feedback-person-info .feedback-person-info p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.feedback-info-cont .feedback-star-cont ul {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  display: flex;
+  gap: 5px;
+}
+.feedback-info-cont .feedback-star-cont ul li {
+  width: 20px;
+  height: 20px;
+}
+.feedback-info-cont .feedback-star-cont ul li img {
+  width: 100%;
+  height: 100%;
 }
