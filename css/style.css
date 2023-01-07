@@ -651,10 +651,19 @@ button {
   width: 35px;
 }
 .feedback-section .feedback-items {
+  position: relative;
   padding: 0 15px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 100px;
+}
+.feedback-section .feedback-bg-element {
+  width: 240px;
+  height: 165px;
+  position: absolute;
+  left: -80px;
+  bottom: -20px;
+  z-index: -1;
 }
 .feedback-section .feedback-item {
   flex: 0 0 34%;
