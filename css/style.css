@@ -64,9 +64,6 @@ button {
 .header.fixed {
   position: fixed;
 }
-.header .brand-name {
-  padding: 0 15px;
-}
 .header .nav-toggle {
   width: 40px;
   height: 34px;
@@ -112,9 +109,6 @@ button {
 .header .nav-toggle span:after {
   transform: translateY(6px);
 }
-.header .nav {
-  padding: 0 15px;
-}
 .header .nav ul {
   list-style: none;
   margin: 0;
@@ -137,9 +131,7 @@ button {
 .header .nav ul li a:hover {
   color: #fd6e0a;
 }
-.header .nav-btn {
-  padding: 0 15px;
-}
+
 /* home section design */
 .home-section {
   background-color: #fdf8f7;
@@ -150,12 +142,13 @@ button {
   position: relative;
 }
 .home-section .social {
-  height: 100vh;
+  height: 100%;
   margin-left: 3%;
-  position: fixed;
+  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 23px;
   z-index: 1099;
 }
@@ -166,7 +159,6 @@ button {
   opacity: 0.5;
 }
 .home-section .home-text {
-  padding-left: 15px;
   flex: 0 0 50%;
   max-width: 50%;
   margin: auto 0;
@@ -218,13 +210,12 @@ button {
   color: #ffffff;
 }
 .home-section .home-img {
-  padding-right: 15px;
   flex: 0 0 50%;
   max-width: 50%;
 }
 .home-section .home-img img {
-  width: 595px;
-  height: 585px;
+  width: 100%;
+  height: 100%;
 }
 
 /* support section */
@@ -283,7 +274,6 @@ button {
   flex-wrap: nowrap;
 }
 .service-section .service-title-container {
-  padding-left: 15px;
   flex: 0 0 25%;
   max-width: 25%;
 }
@@ -439,7 +429,6 @@ button {
   color: #15295f;
 }
 .experience-section .experience-items {
-  padding: 0 15px;
   margin-top: 30px;
   justify-content: space-between;
   gap: 20px;
@@ -614,7 +603,6 @@ button {
   padding-top: 110px;
 }
 .feedback-section .feedback-section-title-cont {
-  padding: 0 15px;
   display: flex;
   justify-content: space-between;
   padding-bottom: 70px;
@@ -650,7 +638,6 @@ button {
 }
 .feedback-section .feedback-items {
   position: relative;
-  padding: 0 15px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 100px;
@@ -676,8 +663,11 @@ button {
 }
 .feedback-section .feedback-item.active .feedback-active-img {
   display: block;
+  flex: 0 0 40%;
+  max-width: 40%;
 }
 .feedback-section .feedback-item.active .feedback-active-img img {
+  width: 100%;
   height: 100%;
 }
 .feedback-section .feedback-item .feedback-active-img {
@@ -754,4 +744,63 @@ button {
 .feedback-info-cont .feedback-star-cont ul li img {
   width: 100%;
   height: 100%;
+}
+
+/* blog section */
+.blog-section {
+  padding: 65px 0 100px;
+  background-color: #1f1d2b;
+}
+.blog-section .blog-section-title p {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 29px;
+  text-align: center;
+  color: #fd6e0a;
+}
+.blog-section .blog-section-title h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  text-align: center;
+  color: #ffffff;
+}
+.blog-section .blog-items {
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.blog-section .blog-items .blog-item {
+  position: relative;
+}
+.blog-section .blog-items .blog-item .blog-date-cont {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  background-color: #1f1d2b;
+}
+.blog-section .blog-items .blog-item .blog-date-cont p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: #ffffff;
+}
+.blog-section .blog-items .blog-item .blog-item-img img {
+  width: 100%;
+  display: block;
+}
+.blog-items .blog-item .blog-info p {
+  padding: 10px 0 20px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #fd6e0a;
+}
+.blog-items .blog-item .blog-info h4 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ffffff;
 }
