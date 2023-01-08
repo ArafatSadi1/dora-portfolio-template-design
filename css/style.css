@@ -804,6 +804,45 @@ button {
   line-height: 28px;
   color: #ffffff;
 }
+/* blog popup */
+#blog-popup-1,
+#blog-popup-2,
+#blog-popup-3 {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  max-width: 70%;
+  margin: 40px auto;
+  position: relative;
+}
+.popup-blog-item .popup-blog-item-img img {
+  width: 100%;
+  height: 60vh;
+}
+.popup-blog-item .popup-blog-date-cont p {
+  color: #6f6b80;
+}
+.popup-blog-item .blog-info {
+  margin-top: 20px;
+}
+.popup-blog-item .blog-info p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #fd6e0a;
+}
+.popup-blog-item .blog-info h4 {
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+.popup-blog-item .blog-info .popup-blog-txt {
+  color: #1f1d2b;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+}
 
 /* contact section design */
 .contact-section {
@@ -886,17 +925,4 @@ button {
   font-size: 16px;
   line-height: 21px;
   color: #15295f;
-}
-
-/* test */
-#small-dialog {
-	background: white;
-	padding: 20px 30px;
-	text-align: left;
-	max-width: 400px;
-	margin: 40px auto;
-	position: relative;
-}
-#small-dialog h1 {
-  color: red;
 }

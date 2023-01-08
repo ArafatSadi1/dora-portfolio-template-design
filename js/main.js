@@ -34,14 +34,15 @@ $(document).ready(function () {
       },
     },
   });
+
   // test
-  $(".popup-with-zoom-anim").magnificPopup({
+  $(".blog-popup").magnificPopup({
     type: "inline",
 
-    fixedContentPos: false,
+    fixedContentPos: true,
     fixedBgPos: true,
 
-    overflowY: "auto",
+    overflowY: "scroll",
 
     closeBtnInside: true,
     preloader: false,
@@ -50,4 +51,5 @@ $(document).ready(function () {
     removalDelay: 300,
     mainClass: "my-mfp-zoom-in",
   });
+  // test
 });
