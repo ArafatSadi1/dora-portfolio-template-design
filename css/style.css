@@ -804,3 +804,99 @@ button {
   line-height: 28px;
   color: #ffffff;
 }
+
+/* contact section design */
+.contact-section {
+  padding: 70px 0;
+}
+.contact-section .contact-info-cont {
+  display: flex;
+  gap: 130px;
+}
+.contact-section .contact-info {
+  flex: 0 0 40%;
+  max-width: 40%;
+}
+.contact-section .contact-info h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 39px;
+  text-transform: capitalize;
+  color: #000000;
+}
+.contact-section .contact-info p {
+  padding: 15px 0 55px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #6f6b80;
+}
+.contact-section .contact-social {
+  display: flex;
+  gap: 30px;
+}
+.contact-section .contact-social li {
+  width: 20px;
+  height: 20px;
+}
+.contact-section .contact-social li img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease;
+}
+.contact-section .contact-social li:hover img {
+  opacity: 0.5;
+}
+.contact-section .contact-form h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  color: #000000;
+}
+.contact-section .contact-form .input-control {
+  margin-top: 25px;
+  padding: 15px 30px;
+  width: 100%;
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #fafbfd;
+  border: none;
+}
+.contact-section .contact-form .input-control:focus {
+  outline: none;
+}
+.contact-section .contact-form textarea {
+  height: 170px;
+}
+.contact-section .contact-form .form-btn {
+  margin-top: 30px;
+}
+
+/* copyright */
+.copyright {
+  padding: 40px 0;
+  background-color: #f1f4fb;
+  text-align: center;
+}
+.copyright p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #15295f;
+}
+
+/* test */
+#small-dialog {
+	background: white;
+	padding: 20px 30px;
+	text-align: left;
+	max-width: 400px;
+	margin: 40px auto;
+	position: relative;
+}
+#small-dialog h1 {
+  color: red;
+}
