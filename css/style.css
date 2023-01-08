@@ -556,59 +556,16 @@ button {
 }
 .works-section .works-items {
   display: flex;
-  flex-wrap: wrap;
+  gap: 30px;
 }
-.works-items .work-item {
-  flex: 0 0 33.33%;
-  max-width: 33.33%;
+.works-items .work-item-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
-.work-item .work-item-inner img {
-  display: block;
+.works-items .work-item-cont a img {
   width: 100%;
-  padding: 15px;
-}
-/* works lightbox */
-.works-lightbox {
-  position: fixed;
-  z-index: 1099;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: zoom-out;
-  display: none;
-}
-.works-lightbox.open {
-  display: flex;
-}
-
-.works-lightbox .lightbox-img {
-  display: flex;
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  padding: 40px 0;
-}
-.works-lightbox .works-img-box {
-  position: relative;
-  cursor: auto;
-}
-.works-lightbox .lightbox-close {
-  height: 30px;
-  width: 30px;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-  font-size: 40px;
-  color: #ffffff;
-  text-align: center;
-  line-height: 26px;
-  cursor: zoom-out;
+  height: 100%;
 }
 
 /* feedback section design */
@@ -678,6 +635,9 @@ button {
 }
 .feedback-section .feedback-item.active .feedback-active-img {
   display: block;
+}
+.feedback-section .feedback-item.active .feedback-active-img img {
+  height: 100%;
 }
 .feedback-section .feedback-item .feedback-active-img {
   display: none;
