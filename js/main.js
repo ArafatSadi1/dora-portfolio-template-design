@@ -1,6 +1,15 @@
 let index = 0;
 
 $(document).ready(function () {
+  // fixed header
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+      $(".header").addClass("fixed");
+    } else {
+      $(".header").removeClass("fixed");
+    }
+  });
+
   // filter gallery
   $(".works-list").click(function () {
     $(this).addClass("active").siblings().removeClass("active");
