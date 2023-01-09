@@ -35,7 +35,7 @@ $(document).ready(function () {
     },
   });
 
-  // test
+  // blog popup
   $(".blog-popup").magnificPopup({
     type: "inline",
 
@@ -51,5 +51,30 @@ $(document).ready(function () {
     removalDelay: 300,
     mainClass: "my-mfp-zoom-in",
   });
-  // test
+
+  // service slider active button
+  $(".service-swiper-button-prev").click(function () {
+    $(this).addClass("active").siblings().removeClass("active");
+  });
+  $(".service-swiper-button-next").click(function () {
+    $(this).addClass("active").siblings().removeClass("active");
+  });
+});
+
+var swiper = new Swiper(".services-cont", {
+  slidesPerView: 4,
+  spaceBetween: 30,
+  loop: true,
+  centerSlider: true,
+  fade: true,
+  grabCursor: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
+  navigation: {
+    nextEl: ".service-swiper-button-next",
+    prevEl: ".service-swiper-button-prev",
+  },
 });

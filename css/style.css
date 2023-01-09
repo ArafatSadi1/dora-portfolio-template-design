@@ -274,6 +274,7 @@ button {
   flex-wrap: nowrap;
 }
 .service-section .service-title-container {
+  position: relative;
   flex: 0 0 25%;
   max-width: 25%;
 }
@@ -284,7 +285,7 @@ button {
   color: #fd6e0a;
 }
 .service-section .service-title-container h1 {
-  margin: 10px 0 20px;
+  margin-top: 10px 0 20px;
   font-weight: 700;
   font-size: 30px;
   line-height: 39px;
@@ -292,11 +293,16 @@ button {
   color: #000000;
 }
 .service-title-container .service-btn-container {
+  padding-top: 40px;
   display: flex;
   align-items: center;
   gap: 20px;
 }
-.service-btn-container .service-btn-left {
+.service-btn-container .service-swiper-button-next,
+.service-btn-container .service-swiper-button-prev {
+  position: relative;
+  left: 0;
+  right: 0;
   display: block;
   width: 50px;
   height: 50px;
@@ -306,25 +312,21 @@ button {
   align-items: center;
   justify-content: center;
 }
-.service-btn-container .service-btn-right {
-  display: block;
-  width: 50px;
-  height: 50px;
+.service-btn-container .service-swiper-button-next.active,
+.service-btn-container .service-swiper-button-prev.active {
   background-color: #fd6e0a;
-  border-radius: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
-
-.service-section .service-items {
-  position: relative;
+.service-btn-container .service-swiper-button-next::after,
+.service-btn-container .service-swiper-button-prev::after {
+  display: none;
+}
+.service-section .services-cont {
+  padding: 30px;
   flex: 0 0 100%;
   max-width: 100%;
-  display: flex;
-  align-items: center;
+}
+.service-section .service-items {
   text-align: center;
-  gap: 30px;
 }
 .service-section .service-items .service-element {
   position: absolute;

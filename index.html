@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dora - template</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <!-- swiper css -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <!-- magnific-popup css cdn link  -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
     />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!-- header start -->
@@ -127,69 +129,71 @@
             <p>Services</p>
             <h1>I Provide Wide Range Of Digital Services</h1>
             <div class="service-btn-container">
-              <a href="#" class="service-btn-left">
+              <div class="service-swiper-button-prev">
                 <img src="images/icons/arrow-left.svg" alt="service left btn" />
-              </a>
-              <a href="#" class="service-btn-right">
+              </div>
+              <div class="service-swiper-button-next">
                 <img
                   src="images/icons/arrow-right.svg"
                   alt="service left btn"
                 />
-              </a>
+              </div>
             </div>
           </div>
-          <div class="service-items">
-            <div class="service-element">
-              <img src="images/element.png" alt="" />
+          <div class="swiper services-cont">
+            <div class="swiper-wrapper service-items">
+              <div class="service-element">
+                <img src="images/element.png" alt="" />
+              </div>
+              <!-- service item start -->
+              <div class="swiper-slide service-item">
+                <span class="service-item-logo-cont-1"
+                  ><img src="images/icons/ui-ux.svg" alt="service"
+                /></span>
+                <h4>UI/UX Design</h4>
+                <p>
+                  Rror te inal desiga othe fal dveoprer age your adcased men
+                  Mageeef speists
+                </p>
+              </div>
+              <!-- service item end -->
+              <!-- service item start -->
+              <div class="swiper-slide service-item">
+                <span class="service-item-logo-cont-2"
+                  ><img src="images/icons/web-desgin.svg" alt="service"
+                /></span>
+                <h4>Web Design</h4>
+                <p>
+                  Rror te inal desiga othe fal dveoprer age your adcased men
+                  Mageeef speists
+                </p>
+              </div>
+              <!-- service item end -->
+              <!-- service item start -->
+              <div class="swiper-slide service-item">
+                <span class="service-item-logo-cont-3"
+                  ><img src="images/icons/digital-marketing.svg" alt="service"
+                /></span>
+                <h4>Digital Marketing</h4>
+                <p>
+                  Rror te inal desiga othe fal dveoprer age your adcased men
+                  Mageeef speists
+                </p>
+              </div>
+              <!-- service item end -->
+              <!-- service item start -->
+              <div class="swiper-slide service-item">
+                <span class="service-item-logo-cont-4"
+                  ><img src="images/icons/app-desgin.svg" alt="service"
+                /></span>
+                <h4>App Development</h4>
+                <p>
+                  Rror te inal desiga othe fal dveoprer age your adcased men
+                  Mageeef speists
+                </p>
+              </div>
+              <!-- service item end -->
             </div>
-            <!-- service item start -->
-            <div class="service-item">
-              <span class="service-item-logo-cont-1"
-                ><img src="images/icons/ui-ux.svg" alt="service"
-              /></span>
-              <h4>UI/UX Design</h4>
-              <p>
-                Rror te inal desiga othe fal dveoprer age your adcased men
-                Mageeef speists
-              </p>
-            </div>
-            <!-- service item end -->
-            <!-- service item start -->
-            <div class="service-item">
-              <span class="service-item-logo-cont-2"
-                ><img src="images/icons/web-desgin.svg" alt="service"
-              /></span>
-              <h4>Web Design</h4>
-              <p>
-                Rror te inal desiga othe fal dveoprer age your adcased men
-                Mageeef speists
-              </p>
-            </div>
-            <!-- service item end -->
-            <!-- service item start -->
-            <div class="service-item">
-              <span class="service-item-logo-cont-3"
-                ><img src="images/icons/digital-marketing.svg" alt="service"
-              /></span>
-              <h4>Digital Marketing</h4>
-              <p>
-                Rror te inal desiga othe fal dveoprer age your adcased men
-                Mageeef speists
-              </p>
-            </div>
-            <!-- service item end -->
-            <!-- service item start -->
-            <div class="service-item">
-              <span class="service-item-logo-cont-4"
-                ><img src="images/icons/app-desgin.svg" alt="service"
-              /></span>
-              <h4>App Development</h4>
-              <p>
-                Rror te inal desiga othe fal dveoprer age your adcased men
-                Mageeef speists
-              </p>
-            </div>
-            <!-- service item end -->
           </div>
         </div>
       </div>
@@ -366,12 +370,12 @@
         <div class="feedback-section-title-cont">
           <h1>Clients are satisfied for our work, view feedback</h1>
           <div class="feedback-btn-cont">
-            <div class="feedback-btn">
+            <a href="#" class="feedback-btn">
               <img src="images/icons/arrow-left.svg" alt="" />
-            </div>
-            <div class="feedback-btn active">
+            </a>
+            <a href="#" class="feedback-btn active">
               <img src="images/icons/arrow-right.svg" alt="" />
-            </div>
+            </a>
           </div>
         </div>
         <div class="feedback-items">
@@ -656,6 +660,8 @@
     <script src="js/jquery.min.js"></script>
     <!-- magnific popup js cdn link  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <!-- swiper js -->
+    <script src="js/swiper-bundle.min.js"></script>
     <!-- main js -->
     <script src="js/main.js"></script>
   </body>
