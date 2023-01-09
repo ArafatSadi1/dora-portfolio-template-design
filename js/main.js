@@ -59,8 +59,16 @@ $(document).ready(function () {
   $(".service-swiper-button-next").click(function () {
     $(this).addClass("active").siblings().removeClass("active");
   });
-});
 
+  // feedback slider active button
+  $(".feedback-swiper-button-prev").click(function () {
+    $(this).addClass("active").siblings().removeClass("active");
+  });
+  $(".feedback-swiper-button-next").click(function () {
+    $(this).addClass("active").siblings().removeClass("active");
+  });
+});
+// service section swiper slider
 var swiper = new Swiper(".services-cont", {
   slidesPerView: 4,
   spaceBetween: 30,
@@ -76,5 +84,23 @@ var swiper = new Swiper(".services-cont", {
   navigation: {
     nextEl: ".service-swiper-button-next",
     prevEl: ".service-swiper-button-prev",
+  },
+});
+
+// feedback section swiper slider
+var swiper = new Swiper(".feedback-items-cont", {
+  slidesPerView: 2,
+  spaceBetween: 30,
+  loop: true,
+  centerSlider: true,
+  fade: true,
+  grabCursor: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".feedback-swiper-button-next",
+    prevEl: ".feedback-swiper-button-prev",
   },
 });
