@@ -135,4 +135,17 @@ var swiper = new Swiper(".feedback-items-cont", {
     nextEl: ".feedback-swiper-button-next",
     prevEl: ".feedback-swiper-button-prev",
   },
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 30,
+    },
+  },
+
 });

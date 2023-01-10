@@ -726,7 +726,7 @@ button {
   display: none;
   opacity: 0;
   animation: showImg 1s linear forwards;
-  transform: scale(.9);
+  transform: scale(0.9);
 }
 @keyframes showImg {
   100% {
@@ -1058,5 +1058,37 @@ button {
   .support-items .support-item {
     flex: 0 0 50%;
     max-width: 50%;
+    padding: 15px;
+    justify-content: start;
+  }
+  .service-section .service-title-container {
+    flex: 0 0 30%;
+    max-width: 30%;
+  }
+  .works-section .works-items {
+    gap: 20px;
+  }
+  .works-items .work-item-cont {
+    gap: 20px;
+  }
+  .feedback-section .feedback-items-cont {
+    padding: 30px;
+  }
+  .feedback-section .feedback-item.swiper-slide-active {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .blog-section .blog-items {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  .blog-section .blog-item {
+    padding-top: 10px;
+    flex: 0 0 48%;
+    max-width: 48%;
+  }
+  .contact-section .contact-info-cont {
+    gap: 30px;
   }
 }
