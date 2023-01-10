@@ -28,7 +28,6 @@ $(document).ready(function () {
 
     if (filter == "all") {
       $(".image").show(400);
-      $(".work-item-cont").css("flex-direction", "column");
     } else {
       $(".image")
         .not("." + filter)
@@ -36,14 +35,16 @@ $(document).ready(function () {
       $(".image")
         .filter("." + filter)
         .show(400);
-      $(".work-item-cont").css("flex-direction", "row");
     }
   });
 
-  // magnific popup
+  // magnific popup for work section
   $(".works-items").magnificPopup({
     delegate: "a",
     type: "image",
+    fixedContentPos: true,
+    fixedBgPos: true,
+
     gallery: {
       enabled: true,
     },
@@ -103,6 +104,18 @@ var swiper = new Swiper(".services-cont", {
   navigation: {
     nextEl: ".service-swiper-button-next",
     prevEl: ".service-swiper-button-prev",
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
   },
 });
 

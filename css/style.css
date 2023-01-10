@@ -61,11 +61,12 @@ button {
 .header {
   width: 100%;
   transition: all 0.5s ease;
-  z-index: 11000;
+  z-index: 110;
   background-color: #ffffff;
 }
 .header.fixed {
   position: fixed;
+  box-shadow: 0px 15px 10px -15px #6f6b80;
 }
 .header .brand-name {
   flex: 0 0 30%;
@@ -326,6 +327,10 @@ button {
 .service-btn-container .service-swiper-button-next.active,
 .service-btn-container .service-swiper-button-prev.active {
   background-color: #fd6e0a;
+}
+.service-btn-container .service-swiper-button-next.active img,
+.service-btn-container .service-swiper-button-prev.active img {
+  filter: invert(1);
 }
 .service-btn-container .service-swiper-button-next:hover,
 .service-btn-container .service-swiper-button-prev:hover {
@@ -597,6 +602,7 @@ button {
   height: 100%;
   padding: 15px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.6);
@@ -606,14 +612,35 @@ button {
 .works-items .work-item-cont .image:hover .overlay {
   opacity: 1;
 }
+.works-items .work-item-cont .image .overlay img {
+  width: 40px;
+  margin: 0;
+  transform: translateY(-30px);
+  transition: all 0.5s ease;
+  margin-bottom: 15px;
+}
+.works-items .work-item-cont .image:hover .overlay img {
+  transform: translateY(0);
+}
 .works-items .work-item-cont .image .overlay h4 {
   color: #ffffff;
   font-size: 24px;
   margin: 0;
   transform: translateY(-30px);
   transition: all 0.5s ease;
+  margin-bottom: 10px;
 }
 .works-items .work-item-cont .image:hover .overlay h4 {
+  transform: translateY(0);
+}
+.works-items .work-item-cont .image .overlay p {
+  color: #ffffff;
+  font-size: 16px;
+  margin: 0;
+  transform: translateY(-30px);
+  transition: all 0.5s ease;
+}
+.works-items .work-item-cont .image:hover .overlay p {
   transform: translateY(0);
 }
 
@@ -654,6 +681,10 @@ button {
 .feedback-btn-cont .feedback-swiper-button-next.active,
 .feedback-btn-cont .feedback-swiper-button-prev.active {
   background-color: #fd6e0a;
+}
+.feedback-btn-cont .feedback-swiper-button-next.active img,
+.feedback-btn-cont .feedback-swiper-button-prev.active img {
+  filter: invert(1);
 }
 .feedback-btn-cont .feedback-swiper-button-next:hover,
 .feedback-btn-cont .feedback-swiper-button-prev:hover {
@@ -971,6 +1002,11 @@ button {
 }
 
 /* responsive design */
+@media only screen and (max-width: 1300px) {
+  .home-section .social {
+    display: none;
+  }
+}
 @media (min-width: 768px) {
   .header .nav {
     display: flex !important;
@@ -1004,9 +1040,12 @@ button {
   .header .nav-btn {
     margin: 15px 30px;
   }
-}
-@media only screen and (max-width: 1300px) {
-  .home-section .social {
-    display: none;
+  .support-section .support-items {
+    border-radius: 0;
+    margin: 60px auto 0;
+  }
+  .support-items .support-item {
+    flex: 0 0 50%;
+    max-width: 50%;
   }
 }
