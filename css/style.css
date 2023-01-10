@@ -735,8 +735,8 @@ button {
   }
 }
 .feedback-section .feedback-item.swiper-slide-active {
-  flex: 0 0 62%;
-  max-width: 62%;
+  flex: 0 0 60%;
+  max-width: 60%;
 }
 .feedback-section .feedback-item.swiper-slide-active .feedback-active-img {
   display: block;
@@ -1077,6 +1077,12 @@ button {
   .feedback-section .feedback-item.swiper-slide-active {
     flex: 0 0 100%;
     max-width: 100%;
+  }
+  #blog-popup-1,
+  #blog-popup-2,
+  #blog-popup-3 {
+    padding: 40px 20px;
+    max-width: 80%;
   }
   .blog-section .blog-items {
     flex-wrap: wrap;
