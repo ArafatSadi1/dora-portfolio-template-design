@@ -111,13 +111,18 @@ var swiper = new Swiper(".services-cont", {
       slidesPerView: 1,
       spaceBetween: 30,
     },
+    // when window width is >= 320px
+    574: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
     // when window width is >= 766px
     766: {
       slidesPerView: 3,
       spaceBetween: 20,
     },
     // when window width is >= 768px
-    768: {
+    1024: {
       slidesPerView: 4,
       spaceBetween: 30,
     },
