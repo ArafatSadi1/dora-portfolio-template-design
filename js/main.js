@@ -109,7 +109,7 @@ var swiper = new Swiper(".services-cont", {
     // when window width is >= 320px
     320: {
       slidesPerView: 1,
-      spaceBetween: 10,
+      spaceBetween: 30,
     },
     // when window width is >= 766px
     766: {
@@ -141,7 +141,11 @@ var swiper = new Swiper(".feedback-items-cont", {
     prevEl: ".feedback-swiper-button-prev",
   },
   breakpoints: {
-    // when window width is >= 640px
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
     766: {
       slidesPerView: 1,
       spaceBetween: 30,
