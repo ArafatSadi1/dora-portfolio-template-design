@@ -74,40 +74,13 @@ button {
 }
 .header .nav-toggle {
   width: 40px;
-  height: 34px;
-  border: 1px solid #000000;
-  border-radius: 3px;
+  height: 40px;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.5s ease;
   display: none;
 }
-.header .nav-toggle span {
-  height: 1px;
-  display: block;
-  width: 16px;
-  background-color: #000000;
-  position: relative;
-  transition: all 0.5s ease;
-}
-.header .nav-toggle span:before,
-.header .nav-toggle span:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 1px;
+.header .nav-toggle img {
   width: 100%;
-  background-color: #000000;
-  transition: all 0.5s ease;
-}
-.header .nav-toggle span:before {
-  transform: translateY(-6px);
-}
-.header .nav-toggle span:after {
-  transform: translateY(6px);
+  height: 100%;
 }
 .header .nav {
   display: flex;
@@ -1029,7 +1002,6 @@ button {
   }
   .header .nav-toggle {
     display: flex;
-    margin-right: 15px;
   }
   .header .nav {
     flex: 0 0 100%;
