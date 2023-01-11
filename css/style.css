@@ -961,6 +961,7 @@ button {
   color: #000000;
   background-color: #fafbfd;
   border: none;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .contact-section .contact-form .input-control:focus {
   outline: none;
@@ -1149,6 +1150,15 @@ button {
   }
 }
 @media only screen and (max-width: 420px) {
+  .works-section .works-list-ul {
+    flex-wrap: wrap;
+  }
+  .works-section .works-items {
+    gap: 10px;
+  }
+  .works-items .work-item-cont {
+    gap: 10px;
+  }
 }
 @media only screen and (max-width: 375px) {
 }
