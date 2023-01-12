@@ -20,6 +20,17 @@ $(document).ready(function () {
     }
   });
 
+  // experience section progress bar
+  $("#about").waypoint(function (direction) {
+    $(".progress-line span").addClass("animate");
+  });
+  $("#about").waypoint(
+    function (direction) {
+      $(".progress-line span").removeClass("animate");
+    },
+    { offset: "100%" }
+  );
+  
   // filter gallery
   $(".works-list").click(function () {
     $(this).addClass("active").siblings().removeClass("active");

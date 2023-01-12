@@ -477,7 +477,9 @@ p {
   transform: scaleX(0);
   transform-origin: left;
   background-color: #fd6e0a;
-  animation: animate 1s 1.5s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+.experience-item .progress-line span.animate {
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
 .experience-item .progress-line.fb-marketing span {
   width: 90%;
