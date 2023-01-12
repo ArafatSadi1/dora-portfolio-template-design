@@ -63,6 +63,9 @@ button {
   transition: all 0.5s ease;
   z-index: 110;
   background-color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .header.fixed {
   position: fixed;
@@ -120,17 +123,18 @@ button {
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
+  padding-top: 80px;
 }
 .home-section .social {
   height: 100%;
-  margin-left: 3%;
+  margin-left: -70px;
   position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 23px;
-  z-index: 1099;
+  z-index: 1;
 }
 .home-section .social a img {
   transition: all 0.5s ease;
@@ -992,6 +996,16 @@ button {
     display: none;
   }
 }
+@media only screen and (max-width: 900px) {
+  .header .brand-name {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .header .nav {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+}
 @media (min-width: 768px) {
   .header .nav {
     display: flex !important;
@@ -1074,7 +1088,7 @@ button {
 /* Mobile */
 @media only screen and (max-width: 575px) {
   .home-section {
-    padding: 50px 0;
+    padding: 100px 0 50px;
   }
   .home-section .home-text {
     flex: 0 0 100%;
@@ -1161,4 +1175,10 @@ button {
   }
 }
 @media only screen and (max-width: 375px) {
+  .service-section .service-item {
+    padding: 15px;
+  }
+  .feedback-item .feedback-info-cont {
+    padding: 15px;
+  }
 }
