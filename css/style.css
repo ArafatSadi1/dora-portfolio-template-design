@@ -10,6 +10,12 @@ button {
   font-family: "Playfair Display", serif;
   font-weight: 400;
 }
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #6f6b80;
+}
 
 * {
   margin: 0;
@@ -103,7 +109,7 @@ button {
 }
 .header .nav ul li a {
   text-decoration: none;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   color: #15295f;
   padding: 25px 0;
@@ -168,9 +174,6 @@ button {
   text-transform: capitalize;
 }
 .home-section .home-text p {
-  color: #6f6b80;
-  font-size: 16px;
-  line-height: 21px;
   margin: 40px 0 50px;
 }
 .home-section .home-btn-container {
@@ -234,14 +237,14 @@ button {
   align-items: center;
   justify-content: center;
 }
-.support-item .support-text h5 {
+.support-item .support-text h3 {
   font-weight: 700;
   font-size: 24px;
   line-height: 31px;
   color: #000000;
   margin-bottom: 10px;
 }
-.support-item .support-text p {
+.support-item .support-text h5 {
   font-weight: 500;
   font-size: 20px;
   line-height: 18px;
@@ -262,7 +265,7 @@ button {
   flex: 0 0 25%;
   max-width: 25%;
 }
-.service-section .service-title-container p {
+.service-section .service-title-container h5 {
   font-weight: 500;
   font-size: 22px;
   line-height: 29px;
@@ -388,12 +391,6 @@ button {
   line-height: 31px;
   color: #15295f;
   margin: 20px 0 15px;
-}
-.service-items .service-item p {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21px;
-  color: #6f6b80;
 }
 
 /* experience design */
@@ -647,8 +644,8 @@ button {
 }
 .feedback-btn-cont .feedback-swiper-button-next,
 .feedback-btn-cont .feedback-swiper-button-prev {
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   background-color: #ececec;
   border-radius: 50%;
   display: flex;
@@ -672,7 +669,7 @@ button {
 }
 .feedback-btn-cont .feedback-swiper-button-next img,
 .feedback-btn-cont .feedback-swiper-button-prev img {
-  width: 35px;
+  width: 24px;
 }
 .feedback-section .feedback-items {
   display: flex;
@@ -681,14 +678,14 @@ button {
 }
 .feedback-section .feedback-items-cont {
   position: relative;
-  padding: 30px 0;
+  padding: 30px;
 }
 .feedback-section .feedback-bg-element {
   width: 240px;
   height: 165px;
   position: absolute;
   left: -80px;
-  bottom: 60px;
+  bottom: 100px;
   z-index: -1;
 }
 .feedback-section .feedback-bg-element img {
@@ -725,8 +722,7 @@ button {
   height: 100%;
 }
 .feedback-item .feedback-info-cont {
-  padding: 30px;
-  position: relative;
+  padding: 20px;
 }
 .feedback-item .feedback-title-cont {
   display: flex;
@@ -749,20 +745,15 @@ button {
 }
 .feedback-item .feedback-info-cont .feedback-txt {
   padding: 15px 0 40px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21px;
-  color: #6f6b80;
 }
 .feedback-info-cont .feedback-person-info {
   display: flex;
   align-items: center;
   gap: 15px;
-  margin-bottom: 30px;
 }
 .feedback-person-info .feedback-person-img {
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
 }
 .feedback-person-info .feedback-person-img img {
@@ -775,18 +766,12 @@ button {
   line-height: 28px;
   color: #000000;
 }
-.feedback-person-info .feedback-person-info p {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21px;
-  color: #000000;
+.feedback-info-cont .feedback-star-cont {
+  margin-bottom: 8px;
 }
 .feedback-info-cont .feedback-star-cont ul {
-  position: absolute;
-  right: 30px;
-  bottom: 30px;
   display: flex;
-  gap: 5px;
+  gap: 3px;
 }
 .feedback-info-cont .feedback-star-cont ul li {
   width: 20px;
@@ -927,10 +912,6 @@ button {
 }
 .contact-section .contact-info p {
   padding: 15px 0 55px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21px;
-  color: #6f6b80;
 }
 .contact-section .contact-social {
   display: flex;
@@ -959,9 +940,6 @@ button {
   padding: 15px 30px;
   width: 100%;
   display: block;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21px;
   color: #000000;
   background-color: #fafbfd;
   border: none;
@@ -984,9 +962,6 @@ button {
   text-align: center;
 }
 .copyright p {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21px;
   color: #15295f;
 }
 
