@@ -123,7 +123,7 @@ button {
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-  padding-top: 80px;
+  padding-top: 100px;
 }
 .home-section .social {
   height: 100%;
@@ -320,7 +320,7 @@ button {
 }
 .service-section .services-cont {
   position: relative;
-  padding: 30px 0;
+  padding: 30px;
   flex: 0 0 100%;
   max-width: 100%;
 }
@@ -334,7 +334,7 @@ button {
   z-index: -1;
 }
 .service-section .service-item {
-  padding: 40px 30px;
+  padding: 35px 25px;
   background-color: #ffffff;
   box-shadow: 0px 8px 16px rgba(106, 105, 105, 0.06);
 }
@@ -996,6 +996,36 @@ button {
     display: none;
   }
 }
+@media only screen and (max-width: 1240px) {
+  .service-section .services-cont {
+    padding: 25px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .home-text {
+    padding-bottom: 30px;
+  }
+  .home-section .home-text p {
+    margin: 20px 0;
+  }
+  .support-section .support-items {
+    padding: 5px 0;
+    margin: -50px auto 0;
+  }
+  .support-items .support-item span {
+    width: 60px;
+    height: 60px;
+  }
+  .support-item .support-text h5 {
+    font-size: 22px;
+  }
+  .support-item .support-text p {
+    font-size: 18px;
+  }
+  .service-section .services-cont {
+    padding: 20px;
+  }
+}
 @media only screen and (max-width: 900px) {
   .header .brand-name {
     flex: 0 0 25%;
@@ -1004,6 +1034,20 @@ button {
   .header .nav {
     flex: 0 0 75%;
     max-width: 75%;
+  }
+  .service-section .row {
+    flex-wrap: wrap;
+  }
+  .service-section .service-title-container {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-bottom: 20px;
+  }
+  .service-title-container .service-btn-container {
+    padding-top: 20px;
+  }
+  .service-section .services-cont {
+    padding: 20px;
   }
 }
 @media (min-width: 768px) {
@@ -1049,8 +1093,8 @@ button {
     justify-content: start;
   }
   .service-section .service-title-container {
-    flex: 0 0 30%;
-    max-width: 30%;
+    flex: 0 0 70%;
+    max-width: 70%;
   }
   .works-section .works-items {
     gap: 20px;
@@ -1098,16 +1142,6 @@ button {
     display: none;
   }
   .support-items .support-item {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-  .service-section .row {
-    flex-wrap: wrap;
-  }
-  .service-section .services-cont {
-    padding: 30px;
-  }
-  .service-section .service-title-container {
     flex: 0 0 100%;
     max-width: 100%;
   }
@@ -1164,6 +1198,10 @@ button {
   }
 }
 @media only screen and (max-width: 420px) {
+  .service-section .service-title-container {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
   .works-section .works-list-ul {
     flex-wrap: wrap;
   }
