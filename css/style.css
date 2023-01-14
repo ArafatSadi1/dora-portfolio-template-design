@@ -479,7 +479,7 @@ p {
   background-color: #fd6e0a;
 }
 .experience-item .progress-line span.animate {
-  animation: animate 1.5s .5s cubic-bezier(1, 0, 0.5, 1) forwards;
+  animation: animate 1.5s 0.5s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
 .experience-item .progress-line.fb-marketing span {
   width: 90%;
@@ -620,6 +620,12 @@ p {
 }
 .works-items .work-item-cont .image:hover .overlay p {
   transform: translateY(0);
+}
+.mfp-image-holder .mfp-close,
+.mfp-iframe-holder .mfp-close {
+  font-size: 55px;
+  right: -60px;
+  top: 25px;
 }
 
 /* feedback section design */
@@ -857,21 +863,41 @@ p {
 #blog-popup-1,
 #blog-popup-2,
 #blog-popup-3 {
+  max-width: 800px;
   background-color: #ffffff;
-  padding: 40px 30px;
-  max-width: 70%;
   margin: 40px auto;
   position: relative;
+}
+#blog-popup-1 .mfp-close,
+#blog-popup-2 .mfp-close,
+#blog-popup-3 .mfp-close {
+  display: none;
+}
+#popup-close-btn-1,
+#popup-close-btn-2,
+#popup-close-btn-3 {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: -70px;
+  border: 3px solid #ffffff;
+  border-radius: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+}
+#popup-close-btn-1:hover,
+#popup-close-btn-2:hover,
+#popup-close-btn-3:hover {
+  border-radius: 50%;
 }
 .popup-blog-item .popup-blog-item-img img {
   width: 100%;
   height: 60vh;
 }
-.popup-blog-item .popup-blog-date-cont p {
-  color: #6f6b80;
-}
 .popup-blog-item .blog-info {
-  margin-top: 20px;
+  padding: 30px;
 }
 .popup-blog-item .blog-info p {
   font-weight: 500;

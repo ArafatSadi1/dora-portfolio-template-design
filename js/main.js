@@ -30,7 +30,7 @@ $(document).ready(function () {
     },
     { offset: "100%" }
   );
-  
+
   // filter gallery
   $(".works-list").click(function () {
     $(this).addClass("active").siblings().removeClass("active");
@@ -81,6 +81,15 @@ $(document).ready(function () {
     midClick: true,
     removalDelay: 300,
     mainClass: "my-mfp-zoom-in",
+  });
+  $("#popup-close-btn-1").on("click", function () {
+    $.magnificPopup.close();
+  });
+  $("#popup-close-btn-2").on("click", function () {
+    $.magnificPopup.close();
+  });
+  $("#popup-close-btn-3").on("click", function () {
+    $.magnificPopup.close();
   });
 
   // service slider active button
