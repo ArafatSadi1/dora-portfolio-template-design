@@ -625,7 +625,8 @@ p {
 .mfp-iframe-holder .mfp-close {
   font-size: 55px;
   right: -60px;
-  top: 25px;
+  top: 30px;
+  transition: all 0.5s ease;
 }
 
 /* feedback section design */
@@ -876,16 +877,21 @@ p {
 #popup-close-btn-1,
 #popup-close-btn-2,
 #popup-close-btn-3 {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   position: absolute;
   right: -70px;
-  border: 3px solid #ffffff;
+  border: 2px solid #ffffff;
   border-radius: 40%;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.5s ease;
+}
+#popup-close-btn-1 img,
+#popup-close-btn-2 img,
+#popup-close-btn-3 img {
+  width: 30px;
 }
 #popup-close-btn-1:hover,
 #popup-close-btn-2:hover,
@@ -899,24 +905,21 @@ p {
 .popup-blog-item .blog-info {
   padding: 30px;
 }
-.popup-blog-item .blog-info p {
+.popup-blog-item .blog-info .blog-category {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 22px;
   color: #fd6e0a;
+  letter-spacing: 2px;
 }
 .popup-blog-item .blog-info h4 {
-  margin-bottom: 15px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   color: #000000;
+  margin: 5px 0 30px;
 }
 .popup-blog-item .blog-info .popup-blog-txt {
   color: #1f1d2b;
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: 400;
+  line-height: 1.7;
 }
 
 /* contact section design */
