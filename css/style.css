@@ -479,7 +479,7 @@ p {
   background-color: #fd6e0a;
 }
 .experience-item .progress-line span.animate {
-  animation: animate 1.5s 0.5s cubic-bezier(1, 0, 0.5, 1) forwards;
+  animation: animate 0.7s 0.2s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
 .experience-item .progress-line.fb-marketing span {
   width: 90%;
@@ -994,6 +994,34 @@ p {
 }
 .copyright p {
   color: #15295f;
+}
+
+/* cursor animation */
+.cursor {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border: 1px solid #15295f;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: 0.15s;
+  z-index: 11111;
+}
+.cursor-2 {
+  width: 8px;
+  height: 8px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #15295f;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: 0.1s;
+  z-index: 11111;
 }
 
 /* responsive design */
