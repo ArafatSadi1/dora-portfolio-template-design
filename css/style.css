@@ -569,7 +569,6 @@ p {
   transition: all 0.5s ease;
 }
 .works-items .work-item-cont .image:hover img {
-  filter: grayscale(100%);
   transform: scale(1);
 }
 .works-items .work-item-cont .image .overlay {
@@ -709,12 +708,10 @@ p {
   display: none;
   opacity: 0;
   animation: showImg 1s linear forwards;
-  transform: scale(0.9);
 }
 @keyframes showImg {
   100% {
     opacity: 1;
-    transform: scale(1);
   }
 }
 .feedback-section .feedback-item.swiper-slide-active {
@@ -825,6 +822,7 @@ p {
   right: 0;
   padding: 10px;
   background-color: #1f1d2b;
+  z-index: 1;
 }
 .blog-section .blog-items .blog-item .blog-date-cont p {
   font-weight: 500;
@@ -856,9 +854,6 @@ p {
   line-height: 28px;
   color: #ffffff;
   transition: all 0.5s ease;
-}
-.blog-items .blog-item:hover .blog-info h4 {
-  color: #fd6e0a;
 }
 /* blog popup */
 #blog-popup-1,
