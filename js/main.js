@@ -176,7 +176,7 @@ var swiper = new Swiper(".feedback-items-cont", {
       slidesPerView: 1,
       spaceBetween: 30,
     },
-    767: {
+    1400: {
       slidesPerView: 2,
       spaceBetween: 30,
     },
@@ -187,7 +187,6 @@ var swiper = new Swiper(".feedback-items-cont", {
 var cursor = document.querySelector(".cursor");
 var cursor2 = document.querySelector(".cursor-2");
 document.addEventListener("mousemove", function (e) {
-  console.log(cursor, cursor2);
   cursor.style.cssText = cursor2.style.cssText =
     "left: " + e.clientX + "px; top: " + e.clientY + "px;";
 });

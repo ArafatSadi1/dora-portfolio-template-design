@@ -124,10 +124,6 @@ p {
 /* home section design */
 .home-section {
   background-color: #fdf8f7;
-  background-image: url("../images/backgraound_elements.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
   position: relative;
   padding-top: 100px;
 }
